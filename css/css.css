@@ -1,0 +1,18 @@
+#menu ul {
+	background-color: #726362;
+    padding:0px;
+    margin:0px;
+    list-style:none;
+	text-align: center;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 5px 60px;
+    display: inline-block;
+}
+
+#head h2 {
+	text-align: center;
+}
