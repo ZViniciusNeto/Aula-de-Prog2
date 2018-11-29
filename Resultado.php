@@ -14,7 +14,7 @@
 
 		
 		$sql = "INSERT INTO pesquisaFinal (nome, qualidade, nota, best, jogabilidade, som, grafica, site) ";
-		$sql = $sql . " VALUES (, :nome, :qualidade, :nota, :best, :jogabilidade, :som, :grafica, :site)";
+		$sql = $sql . " VALUES (:nome, :qualidade, :nota, :best, :jogabilidade, :som, :grafica, :site)";
 		$stmt = $db->prepare($sql);
 		$stmt->bindValue(':nome', $nome, PDO::PARAM_STR);
 		$stmt->bindValue(':qualidade', $qualidade, PDO::PARAM_STR);
