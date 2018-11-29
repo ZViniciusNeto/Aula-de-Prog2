@@ -13,9 +13,10 @@
 		$notaSite = $_REQUEST['notaSite'];
 
 		
-		$sql = "INSERT INTO pesquisaFinal (nome, qualidade, nota, best, jogabilidade, som, grafica, site) ";
-		$sql = $sql . " VALUES (:nome, :qualidade, :nota, :best, :jogabilidade, :som, :grafica, :site)";
+		$sql = "INSERT INTO pesquisaFinal (id ,nome, qualidade, nota, best, jogabilidade, som, grafica, site) ";
+		$sql = $sql . " VALUES (:id, :nome, :qualidade, :nota, :best, :jogabilidade, :som, :grafica, :site)";
 		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', 0, PDO::PARAM_INT);
 		$stmt->bindValue(':nome', $nome, PDO::PARAM_STR);
 		$stmt->bindValue(':qualidade', $qualidade, PDO::PARAM_STR);
 		$stmt->bindValue(':nota', $nota, PDO::PARAM_INT);
