@@ -43,7 +43,7 @@
 				
 				<div class="form-group">
 					<label for="notaJogo">Nota geral para o jogo:</label>
-					<input id="notaJogo" name="notaJogo" type="number" class="form-control"/>
+					<input id="notaJogo" name="notaJogo" type="number" min="0" max="10" class="form-control"/>
 				</div>
 
 				<div class="form-group">
