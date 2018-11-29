@@ -1,5 +1,5 @@
 <?php
-		$db = new PDO('mysql:host=127.0.0.1 ;dbname=localdb;charset=utf8', 'azure', '6#vWHD_$');
+		$db = new PDO('mysql:host=localhost ;dbname=localdb;charset=utf8', 'azure', '6#vWHD_$');
 
 		$nome = $_REQUEST['nome'];
 		$button = $_REQUEST['Enviar'];
